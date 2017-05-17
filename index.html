@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Radioenlace y Radiofrecuencia</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/night.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,110 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background="images/radioenlace.jpg">
+					<h2>Radioenlace y Radiofrecuencia</h2>
+					<h4>Protocolos de Comunicación <strong>INF 311</strong></h4>
+					<p style="text-align: right; font-size: 80%;">Alejandro Quisbert Carvajal
+						<i><a href="#">@alexandroqc</a></i></p>
+					<p style='text-align: right; font-size: 80%;'>Erwin Laura Garcia<i><a href="#">@lauragarcia</a></i></p>
+				</section>
+				<section>
+					<section>
+						<h3>Radiofrecuencia:</h3>
+						<blockquote>&ldquo;Porción menos energética del espectro
+							electromagnético, situada entre 3 KHz y 300 GHz usados para
+							comunicaciones y señales de radar.&ldquo;
+							<p style='text-align: right; font-size: 80%; font-style: italic;'><a href="#">Merriam-Webster</a></p>
+						</blockquote>
+					</section>
+					<section>
+						<h3>Bandas de frecuencia</h3>
+						<table style="font-size:55%;">
+							<thead>
+								<tr>
+									<td>Frecuency</td>
+									<td>Wavelength</td>
+									<td>Designation</td>
+									<td>Abbreviation</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>3–30 Hz</td>
+									<td>100. 000 – 10. 000 km</td>
+									<td>Extremely Low Frequency</td>
+									<td>ELF</td>
+								</tr>
+								<tr>
+									<td>30–300 Hz</td>
+									<td>10. 000 – 1. 000 km</td>
+									<td>Super Low Frequency</td>
+									<td>SLF</td>
+								</tr>
+								<tr>
+									<td>300–3000 Hz</td>
+									<td>1. 000 – 100 km</td>
+									<td>Ultra Low Frequency</td>
+									<td>ULF</td>
+								</tr>
+								<tr>
+									<td>3–30 kHz</td>
+									<td>100 – 10 km</td>
+									<td>Very Low Frequency</td>
+									<td>VLF</td>
+								</tr>
+								<tr>
+									<td>30–300 kHz</td>
+									<td>10 – 1 km</td>
+									<td>Low Frequency</td>
+									<td>LF</td>
+								</tr>
+								<tr>
+									<td>300 kHz – 3 MHz</td>
+									<td>1 km – 100 m</td>
+									<td>Medium Frequency</td>
+									<td>MF</td>
+								</tr>
+								<tr>
+									<td>3–30 MHz</td>
+									<td>100 m – 10 m</td>
+									<td>High Frequency</td>
+									<td>HF</td>
+								</tr>
+								<tr>
+									<td>30–300 MHz</td>
+									<td>10 – 1 m</td>
+									<td>Very High Frequency</td>
+									<td>VHF</td>
+								</tr>
+								<tr>
+									<td>300 MHz – 3 GHz</td>
+									<td>1 m – 10 cm</td>
+									<td>Ultra High Frequency</td>
+									<td>UHF</td>
+								</tr>
+								<tr>
+									<td>3–30 GHz</td>
+									<td>10–1 cm</td>
+									<td>Super High Frequency</td>
+									<td>SHF</td>
+								</tr>
+								<tr>
+									<td>30–300 GHz</td>
+									<td>1 cm – 1 mm</td>
+									<td>Extremely High Frequency</td>
+									<td>EHF</td>
+								</tr>
+								<tr>
+									<td>300 GHz – 3 THz</td>
+									<td>1 mm – 0.1 mm</td>
+									<td>Tremendously High Frequency</td>
+									<td>THF</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -37,6 +139,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+				transition: 'convex',
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
